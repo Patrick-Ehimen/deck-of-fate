@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from "react";
+import React, { ReactNode, useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
 
 import PropTypes from "prop-types";
@@ -12,7 +12,7 @@ export default function BentoCard({
   isComingSoon,
 }: {
   src: string;
-  title: string;
+  title: string | ReactNode;
   description?: string;
   isComingSoon?: boolean;
 }) {
